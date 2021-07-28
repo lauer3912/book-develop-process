@@ -1,0 +1,1381 @@
+    1  ls
+    2  cd powerlevel10k
+    3  ls
+    4  yay -S --noconfirm zsh-theme-powerlevel10k-git
+    5  git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
+    6  cd .. && rm -fr powerlevel
+    7  ls
+    8  rm -fr powerlevel10k
+    9  sudo rm -fr powerlevel10k
+   10  ks
+   11  ls
+   12  git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/powerlevel10k
+   13  echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   14  source .zshrc
+   15  yay -S nvm
+   16  nvm list
+   17  ls
+   18  yay -R nvm
+   19  pwd
+   20  yay -S nvm
+   21  echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
+   22  vi ~/.zshrc
+   23  vim ~/.zshrc
+   24  yay -S vi
+   25  vi ~/.zcompdump-CN111003537-5.8 shrc
+   26  source ~/.zshrc
+   27  nvm list
+   28  nvm install 12.22.1
+   29  ls
+   30  cs ~
+   31  cd ~
+   32  ls
+   33  sudo vim ~/.zshrc
+   34  yay -S vim
+   35  sudo vim ~/.zshrc
+   36  source ~/.zshrc
+   37  sudo vim ~/.zshrc
+   38  source ~/.zshrc
+   39  nvm list
+   40  make
+   41  g++
+   42  gcc
+   43  ls
+   44  p10k configure
+   45  ls
+   46  nvm list
+   47  npm i -g yarn
+   48  npm install yrm -g
+   49  npm config get registry
+   50  yrm ls
+   51  yrm use taobao
+   52  npm config get registry
+   53  yarn config get registry
+   54  npm i -g mirror-tool
+   55  ls
+   56  code
+   57  env
+   58  code
+   59  yay -S deno
+   60  deno --version
+   61  deno run https://deno.land/std/examples/welcome.ts
+   62  yay -S QuickJs
+   63  yay -S QuickJS
+   64  yay -Ss quickjs
+   65  yay -S quickjs
+   66  npx playwright codegen www.bing.com
+   67  ls
+   68  history
+   69  nvm list
+   70  yarn install
+   71  rm -fr node_modules
+   72  ls
+   73  pwd
+   74  mkdir -p /workspace/projects
+   75  mkdir -p ~/workspace/projects
+   76  ls
+   77  cd workspace/projects
+   78  git remotes
+   79  git remote
+   80  git remote -v
+   81  git clone http://10.252.78.224:8088/adt-cloud/adt-elf/adt-cloud-vue.git
+   82  ls
+   83  cd adt-cloud-vue
+   84  code .
+   85  code ./
+   86  code
+   87  ls
+   88  cd workspace/projects/adt-cloud-vue
+   89  code ./
+   90  env
+   91  code
+   92  ls
+   93  cd workspace/projects/adt-cloud-vue
+   94  code ./
+   95  rm -fr package-lock.json
+   96  rm -fr yarn.lock
+   97  git branches
+   98  git branch --list
+   99  git branch zeyu
+  100  git status
+  101  git --help
+  102  git branch --help
+  103  git branch
+  104  git --help branch
+  105  man git branch
+  106  yay -S man
+  107  git branch --help
+  108  git branch -d zeyu
+  109  git status
+  110  rm -fr package-lock.json
+  111  rm -fr yarn.lock
+  112  yarn install
+  113  yarn install --verbose
+  114  rm -fr node_modules
+  115  yarn install
+  116  yarn dev
+  117  yarn add normalize.css@^8.0.1
+  118  yarn dev
+  119  yarn install
+  120  yarn dev
+  121  rm -fr node_modules
+  122  npm install
+  123  npm run dev
+  124  rm -fr node_modules
+  125  yarn
+  126  npm run dev
+  127  ls
+  128  cd workspace
+  129  ls
+  130  cd projects
+  131  ls
+  132  cd adt-cloud-vue
+  133  yarn dev
+  134  rm -fr node_modules
+  135  rm -fr package-lock.json
+  136  node -v
+  137  npm install
+  138  npm run dev
+  139  rm -fr package-lock.json
+  140  rm -fr node_modules
+  141  rm -fr yarn.lock
+  142  ls
+  143  npm install
+  144  npm rebuild node-sass
+  145  npm run dev
+  146  rm -fr node_modules
+  147  rm -fr ./node_modules
+  148  ls
+  149  yarn
+  150  ls
+  151  yarn dev
+  152  ls
+  153  cd node_modules/tailwindcss
+  154  ls
+  155  vi package.json
+  156  cd ../../
+  157  vi node_modules/node-sass/package.json
+  158  vi node_modules/postcss/package.json
+  159  vi node_modules/node-sass/package.json
+  160  ls
+  161  rm -fr yarn.lock
+  162  rm -fr package-lock.json
+  163  rm -fr node_modules
+  164  npm cache clean
+  165  npm clean cache
+  166  npm cache -h
+  167  npm cache clean
+  168  npm cache verify
+  169  npm cache clean --force
+  170  ls
+  171  npm install
+  172  npm run dev
+  173  history
+  174  vi node_modules/node-sass/package.json
+  175  vi node_modules/postcss/package.json
+  176  vi node_modules/node-sass/package.json
+  177  vi node_modules/tailwindcss/package.json
+  178  code ./
+  179  npm install
+  180  vi node_modules/tailwindcss/package.json
+  181  vi node_modules/postcss/package.json
+  182  npm install
+  183  npm run dev
+  184  npm uninstall tailwindcss postcss autoprefixer
+  185  npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+  186  yarn dev
+  187  npm run dev
+  188  vi node_modules/postcss/package.json
+  189  npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+  190  npm run dev
+  191  vi node_modules/postcss/package.json
+  192  npm -v
+  193  npm i -g npm
+  194  ls
+  195  rm -fr node_modules
+  196  rm -fr package-lock.json
+  197  npm i
+  198  npm i -g npm@^6
+  199  npm -v
+  200  npm i -g pnpm
+  201  pnpm i
+  202  ls
+  203  rm -fr node_modules
+  204  rm -fr pnpm-lock.yaml
+  205  pnpm i
+  206  yarn dev
+  207  pnpm i --help
+  208  rm -fr node_modules
+  209  yarn 
+  210  yarn version
+  211  yarn set version berry
+  212  yarn --version
+  213  rm -fr node_modules
+  214  yarn
+  215  yarn 
+  216  rm -fr .yarn
+  217  ls
+  218  yarn
+  219  yarn dev
+  220  rm -fr .npmrc
+  221  git config -h
+  222  git config --list
+  223  git config user.name "sunzhifeng"
+  224  git config user.email "sunzhifeng@auodigitech.com"
+  225  git push
+  226  yarn add -h
+  227  yarn add @ls-lint/ls-lint 
+  228  git push
+  229  node
+  230  yarn ls-lint
+  231  git push
+  232  yarn add husky@^6
+  233  ls
+  234  cd .git
+  235  ls
+  236  cd hooks
+  237  lks
+  238  ls
+  239  rm -fr husky.*
+  240  cd ../../
+  241  yarn add husky@^6
+  242  ls
+  243  cd .git
+  244  ls
+  245  cd hooks
+  246  ls
+  247  cd ../../
+  248  npm set-script prepare "husky install" && npm run prepare
+  249  husky install
+  250  ./node_modules/.bin/husky install
+  251  cd ../../
+  252  ls
+  253  cd projects/adt-cloud-vue
+  254  cd .git
+  255  ls
+  256  cd hooks
+  257  ls
+  258  cd ../../
+  259  npm run prepare
+  260  npx husky add .husky/pre-commit "npm test"
+  261  rm -fr node_modules
+  262  rm -fr .husky
+  263  yarn
+  264  yarn dev
+  265  git push
+  266  yarn test
+  267  yarn dev
+  268  rm -fr node_modules
+  269  yarn
+  270  yarn dev
+  271  swift
+  272  yay -S swift
+  273  yay -S python2-sphinx
+  274  yarn
+  275  yarn dev
+  276  rm -fr node_modules
+  277  yarn
+  278  yarn dev
+  279  yay -Ss swift
+  280  yay -S aur/swift-language
+  281  yarn dev
+  282  ls
+  283  yay -Ss swift
+  284  yay -S aur/swift-language
+  285  ls
+  286  cd workspace
+  287  ls
+  288  cd projects
+  289  ls
+  290  cd adt-cloud-vue
+  291  git status
+  292  nvm list
+  293  nvm -h
+  294  nvm list
+  295  nvm install lts/fermium
+  296  node
+  297  nvm list
+  298  nvm alias default lts/erbium
+  299  nvm list
+  300  nvm use v12.22.1
+  301  node
+  302  export HTTPS_PROXY=socks5://153.37.177.186:2080
+  303  yay -S aur/swift-language
+  304  cd ../
+  305  ls
+  306  mkdir temp
+  307  cd temp
+  308  tsc -h
+  309  yay -S aur/swift-language
+  310  swift --version
+  311  node
+  312  deno
+  313  deno upgrade
+  314  deno
+  315  cls
+  316  clear
+  317  node
+  318  ls
+  319  pwd
+  320  code ./
+  321  ka
+  322  ls
+  323  cd workspace
+  324  ls
+  325  cd temp
+  326  ls
+  327  cd bug-less-not-load
+  328  yarn
+  329  yarn dev
+  330  yarn lint:js
+  331  code ./
+  332  yarn dev
+  333  yarn
+  334  yarn dev
+  335  rm -fr **
+  336  D:\workspace\tmp\my-app-4\my-app-4.json
+  337  rm -fr **
+  338  rm -fr .*
+  339  cd ../
+  340  mv my-app-4.json my-app-4.7z
+  341  7z -h
+  342  yay -Ss 7zip
+  343  yay -S aur/7zip-bin
+  344  7zip
+  345  7z -h
+  346  7zip-bin
+  347  7z --help
+  348  yay -Ss 7zip
+  349  yay -S extra/p7zip
+  350  ls
+  351  7z x my-app-4.7z
+  352  ls
+  353  pushd
+  354  ls
+  355  cd ..
+  356  ls
+  357  mv my-app-4.7z
+  358  mv my-app-4.7z ./bug-less-not-load
+  359  ls
+  360  rm -fr *
+  361  rm -fr !(bug-**)
+  362  shopt -s extglob
+  363  yay -Ss shopt
+  364  yay -S aur/meshoptimizer
+  365  shopt -s extglob
+  366  rm -h
+  367  rm --help
+  368  shopt
+  369  yay -Ss shopt
+  370  yay -S aur/meshoptimizer
+  371  shopt extglob
+  372  command not found: shoptcommand not found: shopt
+  373  ls
+  374  rm -fr assets
+  375  rm -fr .**
+  376  ls
+  377  rm -fr .**
+  378  rm -fr *.js
+  379  rm -fr *.json
+  380  ls
+  381  rm -fr components
+  382  rm -fr components layouts locales mi*
+  383  ls
+  384  rm -fr mock* p* st* 
+  385  ls
+  386  rm -fr README.md
+  387  ls
+  388  cd bug-less-not-load
+  389  ls
+  390  mv my-app-4.7z ./
+  391  mv my-app-4.7z ./demo1
+  392  ls
+  393  ls -all
+  394  chmod a+w ./demo1
+  395  ls
+  396  ls -all
+  397  sudo chmod -R 777 ./demo1
+  398  ls -all
+  399  rm -fr demo1
+  400  ls
+  401  cd ../
+  402  ls
+  403  ls /
+  404  ls
+  405  cd /mnt/d/workspace/tmp/my-app-4\n
+  406  mv my-app-4.json ~/workspace/temp/my-app-4.7z
+  407  cd ~/workspace/temp
+  408  ls
+  409  history
+  410  7z -x my-app-4.7z ./bug-less-not-load
+  411  7z -X my-app-4.7z ./bug-less-not-load/
+  412  cp ./my-app-4.7z ./bug-less-not-load/1.7z
+  413  cd ./bug-less-not-load
+  414  ls
+  415  7z -x 1.7z
+  416  7z --help
+  417  ls -all
+  418  7z -x --help
+  419  7z -x ./1.7z
+  420  p7zip -d 1.7z
+  421  yay list
+  422  yay -Ss p7zip
+  423  p7zip
+  424  7z --help
+  425  7z -x 1.7z
+  426  7z -x 1.7z --help
+  427  yay -Ss 7zip
+  428  yay -Rns extra/p7zip
+  429  yay -Rns p7zip
+  430  yay -S 7zip
+  431  7zip
+  432  7z
+  433  yay -Rns 7zip-bin
+  434  yay -Ss shopt
+  435  yay -Rns meshoptimizer
+  436  7z
+  437  yay -Ss 7zip
+  438  yay -S extra/p7zip
+  439  7z
+  440  ls
+  441  mv 1.7z demo.7z
+  442  ls
+  443  7z -x demo.7z
+  444  7z -x demo.7z ./demo
+  445  7z -xy demo.7z ./demo
+  446  rm -fr **.*
+  447  ls
+  448  cp /mnt/d/workspace/tmp/my-app-4/my-app-4.json ./\n
+  449  ls
+  450  mv my-app-4.json ./demo.zip
+  451  ls
+  452  unzip demo.zip
+  453  yay -Ss unzip
+  454  yay -S extra/unzip
+  455  unzip demo.zip
+  456  ls
+  457  yarn
+  458  vi ./pages/login.vue
+  459  code ./
+  460  yanr dev
+  461  yarn dev
+  462  yarn lint --fix
+  463  yarn dev
+  464  code ./
+  465  yarn dev
+  466  node -v
+  467  mkdir playwright
+  468  cd playwright
+  469  mkdir demo1
+  470  cd demo1
+  471  yarn init
+  472  yarn add -D @playwright/test
+  473  mkdir tests
+  474  echo "" > tests/foo.spec.js
+  475  code ./
+  476  npx playwright test
+  477  cd ~/
+  478  ls
+  479  cd workspace
+  480  ls
+  481  cd temp
+  482  ls
+  483  mkdir playwright
+  484  cd playwright
+  485  mkdir demo-on-linuxt
+  486  rm demo-on-linuxt
+  487  rm -d demo-on-linuxt
+  488  ls
+  489  mkdir demo-on-linux
+  490  cd demo-on-linux
+  491  yarn init
+  492  nginx
+  493  yay -Ss nginx
+  494  yay -S extra/nginx
+  495  export HTTP_PROXY=socks5://153.37.177.186:2080
+  496  export HTTPS_PROXY=socks5://153.37.177.186:2080
+  497  yay -S extra/nginx
+  498  docker
+  499  yay -Ss docker
+  500  ls
+  501  cd github-hosts
+  502  ls
+  503  cd ../
+  504  vi main.go
+  505  ls
+  506  cd github-hosts
+  507  ls
+  508  vi README.md
+  509  go run main.go
+  510  yay -Ss docker
+  511  sudo go run main.go
+  512  vi /etc/hosts
+  513  sudo vi /etc/hosts
+  514  sudo go run main.go
+  515  sudo vi /etc/hosts
+  516  cd ~
+  517  ls
+  518  mkdir github-prj
+  519  cd github-prj
+  520  git clone https://github.com/microsoft/playwright.git
+  521  env
+  522  git clone https://github.com/microsoft/playwright.git
+  523  env
+  524  ls
+  525  cd github-prj
+  526  set HTTP_PROXY=socks5://153.37.177.186:2080\nHTTPS_PROXY=socks5://153.37.177.186:2080
+  527  env
+  528  export HTTP_PROXY=socks5://153.37.177.186:2080\nHTTPS_PROXY=socks5://153.37.177.186:2080
+  529  env
+  530  export HTTPS_PROXY=socks5://153.37.177.186:2080\nHTTPS_PROXY=socks5://153.37.177.186:2080
+  531  git clone https://github.com/microsoft/playwright.git
+  532  git branchs -v
+  533  git branch --help
+  534  git branch --list
+  535  cd playwright
+  536  git branch --list
+  537  ls
+  538  cd github-prj
+  539  ls
+  540  cd playwright
+  541  code ./
+  542  env
+  543  git remote --list
+  544  git remote -v
+  545  git branch -v
+  546  git remote --verbose
+  547  node
+  548  npm run build
+  549  yarn
+  550  yarn build
+  551  docker
+  552  yay -Ss docker
+  553  yay -S aur/docker-bin
+  554  yarn tsc-installer
+  555  yarn tsc
+  556  yarn basetest
+  557  yarn doc
+  558  yarn check-deps
+  559  yarn roll
+  560  ping mirros.aliyun.com
+  561  sudo ping mirros.aliyun.com
+  562  sudo ping https://mirros.aliyun.com
+  563  clean
+  564  cls
+  565  cleran
+  566  yay -S aur/docker-bin
+  567  git branch -a
+  568  history
+  569  cd ../
+  570  cargo install mdbook
+  571  ls
+  572  mv github-hosts hosts-github
+  573  ls
+  574  mkdir github-books
+  575  cd github-books
+  576  mdbook init dev-flows
+  577  ls --all ~/
+  578  code ~/.zshrc
+  579  code ~/.bashrc
+  580  code ~/.bashrc_profile
+  581  source ~/.bashrc
+  582  source ~/.oh-my-zsh
+  583  path
+  584  cd ../
+  585  env
+  586  source ~/.zshrc
+  587  ls
+  588  cd github-books
+  589  mdbook init dev-flows
+  590  ls
+  591  cd dev-flows
+  592  ks
+  593  ls
+  594  code ./
+  595  mdbook serve
+  596  cd ../
+  597  mv dev-flows develop-process
+  598  ls
+  599  cd develop-process
+  600  code ./
+  601  cd ~
+  602  ssh-keygen -t rsa -b 4096 -C "lauer3912@gmail.com"
+  603  vi ~/.ssh/id_github_lauer3912.rsa.pub
+  604  rm -fr ~/.ssh/id_github_lauer3912.rsa*
+  605  ssh-keygen -t rsa -b 4096 -C "lauer3912@gmail.com"
+  606  vi ~/.ssh/id_github_lauer3912.rsa.pub
+  607  rm -fr ~/.ssh/id_github_lauer3912*
+  608  ssh-keygen -t rsa -b 4096 -C "lauer3912@gmail.com"
+  609  ls -all ~/.ssh
+  610  ls -all ~/.ssh/
+  611  ls --all ~/.ssh/
+  612  ls -all
+  613  rm -fr id_github_lauer3912_rsa*
+  614  ls -all
+  615  ssh-keygen -t rsa -b 4096 -C "lauer3912@gmail.com"
+  616  vi ~/.ssh/id_github_lauer3912_rsa.pub
+  617  ls
+  618  cd github-books
+  619  ls
+  620  cd develop-process
+  621  git remote add origin git@github.com:techidaily/book-develop-process.git
+  622  ls
+  623  git init
+  624  git add ./src/** book.toml
+  625  git status
+  626  git add .gitignore
+  627  git commit -m "init"
+  628  git config user.email "lauer3912@gmail.com"
+  629  git config user.name "Ian"
+  630  git commit -m "init"
+  631  git remote add origin git@github.com:techidaily/book-develop-process.git
+  632  git push -u origin main
+  633  git branch -M main
+  634  git push -u origin main
+  635  code ~/.ssh/id_github_lauer3912_rsa.pub
+  636  git push -u origin main
+  637  git remote add origin git@github.com:techidaily/book-develop-process.git
+  638  git push -u origin main
+  639  env
+  640  export HTTPS_PROXY=socks5://153.37.177.186:2080
+  641  git push -u origin main
+  642  sudo code /etc/host
+  643  sudo code /etc/hosts
+  644  sudo vi /etc/hosts
+  645  git push -u origin main
+  646  code ~/.ssh/id_github_lauer3912_rsa
+  647  ssh -T git@github.com
+  648  ssh -vT git@github.com
+  649  ssh-add -l -E ~/.ssh/id_github_lauer3912_rsa
+  650  ssh-agent -s
+  651  ssh-add -l -E sha256
+  652  cd ~/.ssh
+  653  ls
+  654  rm -fr known_hosts
+  655  cd ../../
+  656  cd ~/github-books/develop-process
+  657  git push -u origin main
+  658  vi ~/.ssh/id_github_lauer3912_rsa.pub
+  659  git push -u origin main
+  660  ssh -vT git@github.com
+  661  go get goftp.io/server
+  662  go install goftp.io/ftpd
+  663  go install goftp.io/ftpd@latest
+  664  env
+  665  go install goftp.io/ftpd@latest
+  666  go install goftp.io/ftpd
+  667  goftp
+  668  which go
+  669  go get goftp.io/server
+  670  server
+  671  go run server
+  672  cd /usr/lib/go/src
+  673  ls
+  674  cd vendor
+  675  ls
+  676  go get goftp.io/server -v
+  677  go get -v goftp.io/server
+  678  sudo go get -v goftp.io/server
+  679  go --version
+  680  go version
+  681  sudo export HTTPS_PROXY=socks5://153.37.177.186:2080
+  682  su
+  683  cd ~
+  684  ftpd --debug
+  685  ps
+  686  ls
+  687  ftpd --help
+  688  ftpd -D
+  689  ps
+  690  ps --all
+  691  ps -l
+  692  ps aux
+  693  top
+  694  ls
+  695  mkdir ftpdir
+  696  cd ftpdir
+  697  ftpd -D
+  698  ftpd
+  699  go install github.com/Mr-Dai/go-ftpd
+  700  go install github.com/Mr-Dai/go-ftpd@latest
+  701  go install github.com/Mr-Dai/go-ftpd@latest --verbose
+  702  go install --verbose github.com/Mr-Dai/go-ftpd@latest
+  703  go env -w GO111MODULE=on
+  704  go env -w GOPROXY=https://goproxy.cn,direct
+  705  go install --verbose github.com/Mr-Dai/go-ftpd@latest
+  706  go install github.com/Mr-Dai/go-ftpd@latest
+  707  ls -all
+  708  code .zshrc
+  709  go-ftpd -v
+  710  su
+  711  yay -Ss go
+  712  yay -S community/go
+  713  which go
+  714  go-ftpd -v
+  715  go install github.com/Mr-Dai/go-ftpd@latest
+  716  go get github.com/fclairamb/ftpserver
+  717  ftpserver --version
+  718  go env
+  719  cd ~/go
+  720  ls
+  721  cd bin
+  722  ls
+  723  code .zshrc
+  724  source ~/.zshrc
+  725  cd ~
+  726  ls
+  727  cd ftpdir
+  728  ftpserver --help
+  729  ftpserver -conf-only
+  730  ls
+  731  code ./
+  732  mkdir downloads
+  733  pwd
+  734  ftpserver -conf ./ftpserver.json
+  735  ls
+  736  cd ftpdir
+  737  ls
+  738  cd downloads
+  739  ls
+  740  ifconfig
+  741  ifconf
+  742  ping www.baidu.com
+  743  ftpserver -conf ./ftpserver.json
+  744  ls
+  745  vi id_ed25519
+  746  cp id_ed25519 ~/.ssh/id_ed25519
+  747  ls
+  748  cd ~/github-books
+  749  ls
+  750  cd develop-process
+  751  ls
+  752  git push -u origin main
+  753  cd ~/.ssh
+  754  ls
+  755  cd ls -all
+  756  ls --all
+  757  git push -u origin main
+  758  ls -all
+  759  rm -fr known_hosts
+  760  ssh-keygen -t ed25519 -C "lauer3912@gmail.com"
+  761  ls --all
+  762  git push -u origin main
+  763  clear
+  764  cd ../
+  765  ls
+  766  cd go
+  767  ls
+  768  python -v
+  769  python --version
+  770  which python
+  771  cd ~
+  772  ls
+  773  cd workspace
+  774  ls
+  775  cd projects
+  776  ls
+  777  cd ../
+  778  ls
+  779  cd temp
+  780  ls
+  781  cd playwright
+  782  ls
+  783  cd demo-on-linux
+  784  ls
+  785  cd ../
+  786  mkdir demo-on-linux-with-playwright-py
+  787  cd demo-on-linux
+  788  cd ../demo-on-linux-with-playwright-py
+  789  pip install playwright
+  790  python -m ensurepip
+  791  pip install playwright
+  792  which pip
+  793  which pi[
+  794  which pip
+  795  ls -all
+  796  vi .bashrc_profile
+  797  vi .bashrc
+  798  python env
+  799  env
+  800  ls /usr/local/lib/
+  801  ls
+  802  cd /usr/local/lib
+  803  ls
+  804  cd /usr/lib
+  805  ls
+  806  cd python3.
+  807  cd python3.9
+  808  ls
+  809  whereis pip
+  810  ls /usr/lib/python3.9/site-packages
+  811  ls
+  812  python -m venv ./virtual/python_env
+  813  ls
+  814  python --version
+  815  pip install playwright
+  816  source ./virtual/python_env/bin/activate
+  817  pip install playwright
+  818  python -m pip install --upgrade pip
+  819  pip config
+  820  pip config list
+  821  pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+  822  pip install playwright
+  823  python -m pip install --upgrade pip
+  824  /home/sunzhifeng/workspace/temp/playwright/demo-on-linux-with-playwright-py/virtual/python_env/bin/python -m pip install --upgrade pip
+  825  pip --version
+  826  /home/sunzhifeng/workspace/temp/playwright/demo-on-linux-with-playwright-py/virtual/python_env/bin/python -m pip install --upgrade pip
+  827  python -m pip install --upgrade pip
+  828  pip config list
+  829  pip config set global.trusted-host mirrors.aliyun.com
+  830  pip config list
+  831  python -m pip install --upgrade pip
+  832  pip --version
+  833  pip install playwright
+  834  playwright install
+  835  ls
+  836  mkdir src
+  837  code ./
+  838  ls
+  839  python ./tests/demo.spec.py
+  840  pip install pytest-playwright
+  841  ls
+  842  ls -all
+  843  code .zshrc
+  844  source .zshrc
+  845  swift --version
+  846  sudo pacman -Syy
+  847  sudo pacman -Syyu
+  848  swfit --version
+  849  swift --version
+  850  yay --help
+  851  ysy - Syu --devel --timeupdate
+  852  yay -Syu --devel --timeupdate
+  853  lds
+  854  ls
+  855  cd github-books
+  856  ls
+  857  cd develop-process
+  858  mdbook watch
+  859  mdbook serve
+  860  ls
+  861  cd github-books
+  862  ls
+  863  cd develop-process
+  864  code ./
+  865  ls
+  866  cd ../
+  867  ls
+  868  cd ../
+  869  ls
+  870  cd github-prj
+  871  ls
+  872  git clone git@github.com:techidaily/firefox-ios.git
+  873  ls
+  874  cd firefox-ios
+  875  code ./
+  876  cd ../
+  877  ls
+  878  cd playwright
+  879  code ./
+  880  cd ../
+  881  ls
+  882  cd github-prj
+  883  ls
+  884  mkdir github-sync-nuxt.js-stack
+  885  cd github-sync-nuxt.js-stack
+  886  git clone https://github.com/nuxt/test-utils.git @nuxt/test-utils
+  887  ls
+  888  cd @nuxt
+  889  ls
+  890  cd ../
+  891  ls
+  892  cd ../
+  893  cd ~
+  894  nvm list
+  895  node
+  896  ls
+  897  cd github-sync-nuxt.js-stack
+  898  ls
+  899  cd @nuxt
+  900  ls
+  901  cd test-utils
+  902  ls
+  903  code ./
+  904  yarn
+  905  env
+  906  yarn
+  907  unset HTTPS_PROXY
+  908  unset HTTP_PROXY
+  909  env
+  910  yarn
+  911  code ./
+  912  cd ../../
+  913  ls
+  914  cd ../
+  915  ls
+  916  mkdir github-sync-facebook-stack
+  917  cd github-sync-facebook-stack
+  918  history
+  919  sudo pacman -Syyu
+  920  yay -Syu --devel --timeupdate
+  921  ls
+  922  cd github-prj
+  923  ls
+  924  cd github-sync-nuxt.js-stack
+  925  ls
+  926  cd @nuxt/test-utils
+  927  code ./
+  928  cd ../../
+  929  cd ../
+  930  ls
+  931  cd github-sync-facebook-stack
+  932  ls
+  933  git clone https://github.com/facebook/jest.git
+  934  ls
+  935  cd github-prj
+  936  ls
+  937  cd github-sync-nuxt.js-stack
+  938  ls
+  939  cd @nuxt
+  940  ls
+  941  cd test-utils
+  942  ls
+  943  code ./
+  944  ls
+  945  cd github-prj
+  946  ls
+  947  cd github-sync-nuxt.js-stack
+  948  ls
+  949  cd @nuxt/test-utils
+  950  ls
+  951  code ./
+  952  ls
+  953  cd github-prj
+  954  ls
+  955  cd github-sync-facebook-stack
+  956  ls
+  957  code ./jest
+  958  git clone https://github.com/playwright-community/jest-playwright.git
+  959  ls
+  960  code ./jest-playwright
+  961  npm ci
+  962  npm run build
+  963  ls
+  964  cd github-prj
+  965  ls
+  966  cd firefox-ios
+  967  git pull
+  968  ls
+  969  git log
+  970  ls
+  971  history
+  972  yay -Syu --devel --timeupdate
+  973  sudo pacman -Syyu
+  974  swift --version
+  975  ls
+  976  cd github-books
+  977  ls
+  978  cd develop-process
+  979  code ./
+  980  cd ../
+  981  ls
+  982  cd ../
+  983  ls
+  984  cd github-prj
+  985  ls
+  986  cd firefox-ios
+  987  code ./
+  988  cd ../
+  989  ks
+  990  ls
+  991  git clone https://github.com/dothq/browser-ff firefox-macos-dot
+  992  ls
+  993  cd firefox-macos-dot
+  994  ls
+  995  ./melon download
+  996  sudo export HTTPS_PROXY=socks5://153.37.177.186:2080
+  997  ./melon download
+  998  ls
+  999  code ./
+ 1000  ls
+ 1001  cd github-books
+ 1002  ls
+ 1003  cd develop-process
+ 1004  code ./
+ 1005  mdbook serve
+ 1006  cd ../../
+ 1007  ls
+ 1008  cd github-prj
+ 1009  ls
+ 1010  cd firefox-macos-dot
+ 1011  git pull
+ 1012  ls
+ 1013  code ./
+ 1014  git remote -v
+ 1015  git remote /?
+ 1016  git remote --help
+ 1017  ls
+ 1018  git branch -v
+ 1019  tsc -v
+ 1020  nvm list
+ 1021  git status
+ 1022  git branch --help
+ 1023  git checkout --help
+ 1024  git branch --list
+ 1025  git checkout -b ian nightly
+ 1026  git branch --list
+ 1027  yarn
+ 1028  npm list -g --depth 0
+ 1029  ls
+ 1030  yarn
+ 1031  env
+ 1032  unset https_proxy
+ 1033  unset http_proxy
+ 1034  env
+ 1035  unset HTTPS_PROXY
+ 1036  env
+ 1037  unset HTTP_PROXY
+ 1038  yarn
+ 1039  rm -fr node_modules
+ 1040  rm -fr yarn*
+ 1041  yarn
+ 1042  yarn config get registry
+ 1043  npm uninstall -g yrm
+ 1044  yarn config get registry
+ 1045  yarn config global get registry
+ 1046  yarn config 
+ 1047  yarn config --help
+ 1048  cd ~
+ 1049  ls -all
+ 1050  vi .yarnrc
+ 1051  rm -fr .yarnrc
+ 1052  yarn config get registry
+ 1053  rm -fr node_modules
+ 1054  rm -fr yarn.lock
+ 1055  yarn
+ 1056  yarn config get registry
+ 1057  yarn config --help
+ 1058  yarn cache
+ 1059  yarn cache clean
+ 1060  ls -all
+ 1061  rm -fr .yarnrc
+ 1062  ls -all
+ 1063  yarn config get registry
+ 1064  ls -all
+ 1065  yarn
+ 1066  ls -all
+ 1067  vi .yarnrc
+ 1068  npm list -g --depth 0
+ 1069  npm uninstall yarn -g
+ 1070  yarn
+ 1071  which yarn
+ 1072  npm uninstall -g yarn
+ 1073  which yarn
+ 1074  yarn --version
+ 1075  nvm list
+ 1076  npm i -g yarn
+ 1077  which yarn
+ 1078  pwd
+ 1079  env
+ 1080  ls -all
+ 1081  vi .zshrc
+ 1082  vi .zsh_history
+ 1083  rm -fr yarn.lock
+ 1084  rm -fr .yarnnc
+ 1085  rm -fr .yarnrc
+ 1086  env
+ 1087  ls -all
+ 1088  vi .bash_profile
+ 1089  vi .bashrc
+ 1090  vi .bashrc_profile
+ 1091  env
+ 1092  ./melon import
+ 1093  env
+ 1094  cd ~
+ 1095  sudo vi ~/.zshrc
+ 1096  ls -all
+ 1097  code .zshrc
+ 1098  env
+ 1099  ./melon import
+ 1100  ./melon build
+ 1101  ./melon download
+ 1102  env
+ 1103  unset HTTPS_PROXY
+ 1104  unset HTTP_PROXY
+ 1105  ./melon download
+ 1106  ./melon import
+ 1107  ls
+ 1108  cd github-prj
+ 1109  ls
+ 1110  cd firefox-macos-dot
+ 1111  ls
+ 1112  code ./
+ 1113  env
+ 1114  ls
+ 1115  code ./
+ 1116  ls
+ 1117  cd github-prj
+ 1118  ls
+ 1119  cd firefox-macos-dot
+ 1120  code ./
+ 1121  cd ~
+ 1122  yay -S nginx
+ 1123  sudo vim /etc/nginx/nginx.conf
+ 1124  ls
+ 1125  mkdir web
+ 1126  sudo nginx -s start
+ 1127  sudo nginx -h
+ 1128  sudo nginx -s reload
+ 1129  sudo vim /etc/nginx/nginx.conf
+ 1130  sudo nginx -s reload
+ 1131  sudo nginx -h
+ 1132  sudo nginx -s reopen
+ 1133  sudo vim /etc/nginx/nginx.conf
+ 1134  sudo nginx
+ 1135  ls
+ 1136  chmod -R 777 web
+ 1137  ls
+ 1138  sudo nginx -s reload
+ 1139  ls
+ 1140  ls web
+ 1141  sudo vim /etc/nginx/nginx.conf
+ 1142  ls
+ 1143  chmod -R a+r web
+ 1144  cd web
+ 1145  ls -all
+ 1146  ls
+ 1147  cd ..
+ 1148  ls
+ 1149  sudo mv web /
+ 1150  ls /
+ 1151  sudo vim /etc/nginx/nginx.conf
+ 1152  sudo nginx -s reload
+ 1153  history
+ 1154  sudo nginx -s reopen
+ 1155  sudo nginx -s start
+ 1156  nginx -c etc/nginx/nginx.conf
+ 1157  nginx -c /etc/nginx/nginx.conf
+ 1158  sudo nginx -s reload
+ 1159  sudo vim /etc/nginx/nginx.conf
+ 1160  cd /
+ 1161  mkdir logs
+ 1162  sudo mkdir logs
+ 1163  chmod a+rwx ./logs
+ 1164  sudo chmod -R a+rwx ./logs
+ 1165  ls -all
+ 1166  sudo nginx -s reload
+ 1167  sudo nginx -h
+ 1168  sudo nginx -s stop
+ 1169  sudo vim /etc/nginx/nginx.conf
+ 1170  sudo nginx -s stop
+ 1171  sudo nginx -s quit
+ 1172  sudo nginx -s reopen
+ 1173  which nginx
+ 1174  nginx
+ 1175  ls -all /logs
+ 1176  mkdir nginx
+ 1177  ls -all
+ 1178  clear
+ 1179  ls -all /logs
+ 1180  ls
+ 1181  rm -fr nginx
+ 1182  cd /logs
+ 1183  sudo vim /etc/nginx/nginx.conf
+ 1184  sudo nginx -s reopen
+ 1185  ls
+ 1186  mkdir nginx
+ 1187  ls
+ 1188  cd nginx
+ 1189  echo "" > nginx.pid
+ 1190  ls -all
+ 1191  sudo chmod -R a+wrx /logs
+ 1192  sudo nginx -s reopen
+ 1193  ps -ef|grep nginx
+ 1194  ls
+ 1195  vi nginx.pid
+ 1196  rm -fr nginx.pid
+ 1197  echo 2133 > nginx.pid
+ 1198  ls 
+ 1199  sudo nginx -s reopen
+ 1200  vi nginx.pid
+ 1201  history
+ 1202  sudo nginx -s reload
+ 1203  rm -fr nginx.pid
+ 1204  ls
+ 1205  sudo nginx -s start
+ 1206  sudo nginx -s quit
+ 1207  ps -ef|grep nginx
+ 1208  sudo nginx -s reload
+ 1209  ps kill 4733
+ 1210  kill -p 4733
+ 1211  kill -l
+ 1212  ps -ef|grep nginx
+ 1213  ls
+ 1214  sudo vim /etc/nginx/nginx.conf
+ 1215  kill -9 4733
+ 1216  ps -ef|grep nginx
+ 1217  kill -9 4258
+ 1218  nginx -c /etc/nginx/nginx.conf
+ 1219  ps -ef|grep nginx
+ 1220  sudo nginx -c /etc/nginx/nginx.conf
+ 1221  ps -ef|grep nginx
+ 1222  sudo nginx -c /etc/nginx/nginx.conf
+ 1223  ps -ef|grep nginx
+ 1224  sudo nginx -s reload
+ 1225  ls
+ 1226  cd github-prj
+ 1227  ls
+ 1228  git clone https://github.com/PuruVJ/macos-web.git github-sync-macos-web
+ 1229  ls
+ 1230  cd github-books
+ 1231  ls
+ 1232  cd develop-process
+ 1233  code ./
+ 1234  git clone https://github.com/PuruVJ/macos-web.git github-sync-macos-web
+ 1235  mdbook serve
+ 1236  git clone https://github.com/PuruVJ/macos-web.git github-sync-macos-web
+ 1237  ls
+ 1238  cd github-prj
+ 1239  ls
+ 1240  cd firefox-macos-dot
+ 1241  git remote -v
+ 1242  git remote -h
+ 1243  git remote add techidaily git@github.com:techidaily/firefox-macos-dot.git
+ 1244  git remote -v
+ 1245  git push -h
+ 1246  git push -all techidaily
+ 1247  git push --all techidaily
+ 1248  code ./
+ 1249  git config list
+ 1250  git config
+ 1251  git config --global add use.name ian
+ 1252  git config --global --get-all
+ 1253  git config -l
+ 1254  git config --add user.name=ian
+ 1255  git config --add -h
+ 1256  git config --set user.name=ian
+ 1257  git config --global user.name=ian
+ 1258  git config --global user.name ian
+ 1259  git config --global user.email lauer3912@gmail.com
+ 1260  ls
+ 1261  cd github-prj
+ 1262  ls
+ 1263  cd firefox-macos-dot
+ 1264  code ./
+ 1265  ./melon build
+ 1266  mach bootstrap
+ 1267  melon bootstrap
+ 1268  cd ../
+ 1269  ls
+ 1270  cd ../
+ 1271  ls
+ 1272  cd github-books
+ 1273  ls
+ 1274  cd develop-process
+ 1275  code ./
+ 1276  mdbook serve
+ 1277  git status
+ 1278  git add src/**
+ 1279  git status
+ 1280  git commit -am "Save some usefull docs"
+ 1281  git remote -vv
+ 1282  git push
+ 1283  cd ../
+ 1284  cd ~
+ 1285  ls
+ 1286  cd github-prj
+ 1287  ls
+ 1288  mkdir z0-framework
+ 1289  cd z0-framework
+ 1290  git clone http://sunzhifeng:19850321@10.252.78.224:8088/platform/fe-framework/mega-design.git
+ 1291  ls
+ 1292  cd mega-design
+ 1293  ls
+ 1294  yarn
+ 1295  git remote -a
+ 1296  git branch -a
+ 1297  git branch -b -h
+ 1298  git branch -a
+ 1299  git checkout -b zeyu remotes/origin/zeyu
+ 1300  git pull
+ 1301  ls
+ 1302  yarn
+ 1303  code ./
+ 1304  cd examples
+ 1305  ls
+ 1306  cd ui-vue2.x-webpack
+ 1307  yarn
+ 1308  sudo crontab -e -u root
+ 1309  ls
+ 1310  cd github-prj
+ 1311  ls
+ 1312  cd z0-framework
+ 1313  ls
+ 1314  cd mega-design
+ 1315  ls
+ 1316  code ./
+ 1317  cd examples/ui-vue2.x-webpack
+ 1318  ls
+ 1319  rm -fr node_modules
+ 1320  rm -fr yarn.lock
+ 1321  yarn
+ 1322  yarn dev
+ 1323  cd ~/
+ 1324  ls
+ 1325  cd github-prj
+ 1326  ls
+ 1327  cd z0-framework
+ 1328  ls
+ 1329  cd ../
+ 1330  ls
+ 1331  mv z0-framework  ~/z0-framworks
+ 1332  ls
+ 1333  cd ~
+ 1334  ls
+ 1335  cd z0-framworks
+ 1336  ls
+ 1337  cd mega-design
+ 1338  ls
+ 1339  cd ui-maker
+ 1340  ls
+ 1341  cd vue
+ 1342  ls
+ 1343  cd compat-v2.x-v3.x
+ 1344  ls
+ 1345  rm -fr yarn.lock
+ 1346  yarn
+ 1347  cd ../../
+ 1348  cd ../
+ 1349  cd examples/ui-vue2.x-webpack
+ 1350  yarn dev
+ 1351  ls
+ 1352  cd z0-framworks
+ 1353  ls
+ 1354  cd mega-design
+ 1355  ls
+ 1356  cd ../
+ 1357  code ./
+ 1358  ls
+ 1359  mkdir mega-pkg-apps
+ 1360  cd mega-pkg-apps
+ 1361  git clone http://sunzhifeng:19850321@10.252.78.224:8088/platform/fe-framework/mega-pkg-apps/pkg-mega-platform.git
+ 1362  cd ../
+ 1363  git clone http://sunzhifeng:19850321@10.252.78.224:8088/platform/fe-framework/mega-tools.git
+ 1364  ls
+ 1365  mkdir mega-templates
+ 1366  cd ~
+ 1367  ls
+ 1368  cls
+ 1369  clear
+ 1370  ls
+ 1371  cd github-prj
+ 1372  ls
+ 1373  cd firefox-macos-dot
+ 1374  ls
+ 1375  ./melon bootstrap
+ 1376  ./melon build
+ 1377  python -v
+ 1378  python --version
+ 1379  sudo pacman -Syyu
+ 1380  yay -Syu --devel --timeupdate
+ 1381  history
