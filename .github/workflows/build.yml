@@ -1,7 +1,19 @@
-name: GitHub Actions Demo
+# 更多文档参见：https://docs.github.com/cn/actions/quickstart
+
+name: build-actions
 on: [push]
+env:
+  CARGO_TERM_COLOR: always
 jobs:
-  Explore-GitHub-Actions:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install mdbook
+        run: cargo install mdbook
+      - name: Build project
+        run: mdbook build
+  info:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
