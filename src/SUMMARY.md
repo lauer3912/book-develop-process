@@ -5,8 +5,11 @@
 - [软件架构模式](./chapter_3.md)
   - [微服务架构](./micro-services/index.md)
     - [Kubernetes (K8s)](./micro-services/kubernetes/index.md)
-    - [服务网格中间件](./micro-services/service-mesh/index.md)
-- [软件设计模式](./chapter_4.md)
+    - [服务网格 (ServiceMesh)](./micro-services/service-mesh/index.md)
+    - [Knative](./micro-services/knative/index.md)
+  - [云原生架构](./cloud-native/index.md)]
+- [软件设计模式](./design-for-software/index.md)
+  - [故障设计 Design for failure](./design-for-software/design-for-failure.md)
 - [软件工程开发流程模式](./chapter_5.md)
 - [软件发布策略](./chapter_6.md)
   - [灰度发布](./release-strategy/gray-release.md)
