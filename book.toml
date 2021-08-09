@@ -3,3 +3,9 @@ authors = ["IanSun"]
 language = "zh-CN"
 multilingual = false
 src = "src"
+
+[output.html.playground]
+editable = true
+
+[output.html]
+mathjax-support = true
