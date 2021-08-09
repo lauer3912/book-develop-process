@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>失败机制 Design for failure</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter_1.html"><strong aria-hidden="true">1.</strong> 引文</a></li><li class="chapter-item expanded "><a href="../chapter_2.html"><strong aria-hidden="true">2.</strong> 软件测试理论</a></li><li class="chapter-item expanded "><a href="../chapter_3.html"><strong aria-hidden="true">3.</strong> 软件架构模式</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../micro-services/index.html"><strong aria-hidden="true">3.1.</strong> 微服务架构</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../micro-services/kubernetes/index.html"><strong aria-hidden="true">3.1.1.</strong> Kubernetes (K8s)</a></li><li class="chapter-item expanded "><a href="../micro-services/service-mesh/index.html"><strong aria-hidden="true">3.1.2.</strong> 服务网格 (ServiceMesh)</a></li><li class="chapter-item expanded "><a href="../micro-services/knative/index.html"><strong aria-hidden="true">3.1.3.</strong> Knative</a></li></ol></li><li class="chapter-item expanded "><a href="../cloud-native/index.html"><strong aria-hidden="true">3.2.</strong> 云原生架构</a></li></ol></li><li class="chapter-item expanded "><a href="../design-for-software/index.html"><strong aria-hidden="true">4.</strong> 软件设计模式</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../design-for-software/design-for-failure.html" class="active"><strong aria-hidden="true">4.1.</strong> 失败机制 Design for failure</a></li></ol></li><li class="chapter-item expanded "><a href="../chapter_5.html"><strong aria-hidden="true">5.</strong> 软件工程开发流程模式</a></li><li class="chapter-item expanded "><a href="../chapter_6.html"><strong aria-hidden="true">6.</strong> 软件发布策略</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../release-strategy/gray-release.html"><strong aria-hidden="true">6.1.</strong> 灰度发布</a></li></ol></li><li class="chapter-item expanded "><a href="../refs-architecture-mode/index.html"><strong aria-hidden="true">7.</strong> 软件模式参照</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../refs-architecture-mode/api-re-design/index.html"><strong aria-hidden="true">7.1.</strong> HTTP API重新构想</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../refs-architecture-mode/api-re-design/autocode.html"><strong aria-hidden="true">7.1.1.</strong> autocode的标准API库模式</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../web-site-analysis/index.html"><strong aria-hidden="true">8.</strong> 网站性能分析</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../web-site-analysis/GitHub.html"><strong aria-hidden="true">8.1.</strong> GitHub</a></li><li class="chapter-item expanded "><a href="../web-site-analysis/iqiyi.html"><strong aria-hidden="true">8.2.</strong> 爱奇艺</a></li></ol></li><li class="chapter-item expanded "><a href="../best-projects/index.html"><strong aria-hidden="true">9.</strong> 优秀项目资源</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../best-projects/lowCode.html"><strong aria-hidden="true">9.1.</strong> 低代码/无代码</a></li></ol></li><li class="chapter-item expanded "><a href="../compares/index.html"><strong aria-hidden="true">10.</strong> 常见比较</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../compares/server-proxy/index.html"><strong aria-hidden="true">10.1.</strong> 服务代理软件</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../compares/server-proxy/nginx-vs-apache-apisx.html"><strong aria-hidden="true">10.1.1.</strong> 比较Nginx与Apache APISX</a></li></ol></li><li class="chapter-item expanded "><a href="../compares/net-protocol/index.html"><strong aria-hidden="true">10.2.</strong> 网络协议</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../compares/net-protocol/grpc-vs-http.html"><strong aria-hidden="true">10.2.1.</strong> 比较gRPC服务和HTTP API</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../memo/index.html"><strong aria-hidden="true">11.</strong> 心得</a></li><li class="chapter-item expanded "><a href="../TODO.html"><strong aria-hidden="true">12.</strong> TODOs</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="故障设计"><a class="header" href="#故障设计">故障设计</a></h1>
+<h2 id="1-简介"><a class="header" href="#1-简介">1. 简介</a></h2>
+<p>通常情况下，我们的一个请求会经过三个服务来处理。</p>
+<p><img src="./assets/design-for-failure-01.png" alt="" /></p>
+<p>请求从客户端发出，到达Proxy Layer（执行一些公共的逻辑，如逻辑、流控、审计等），完成后，发往App Layer（执行具体业务逻辑），执行完毕后，发向Data Laye（进行数据持久化）。</p>
+<p>事情看起来很简单，然而，在一个分布式系统中：<code>出错是常态</code>。
+因此，我们需要：<code>Design For Failure</code>。即当你的系统将错误当作正常流时，系统便已经对错误免疫了。
+在此，跟大家介绍常见的12种设计思想。</p>
+<h2 id="2-设计思想"><a class="header" href="#2-设计思想">2. 设计思想</a></h2>
+<h3 id="21-防御性设计defensive-design"><a class="header" href="#21-防御性设计defensive-design">2.1. 防御性设计(Defensive Design)</a></h3>
+<p>所谓的防御性设计实际上就是“防呆”，英文叫Idiot Proofing。说白了就是用户有时候会不自觉的做一些蠢事，我们在设计的时候要尽量考虑到一些不规范的交互行为，如果你的用户是一只猴子，你要写包单保证系统不被玩坏。</p>
+<blockquote>
+<p>注：防御性设计是一种设计思想，它的目的是为了防止用户在系统中做出错误的行为。
+例如，在Android开发中使用到的Monkey Test就是用于这样的目的。</p>
+</blockquote>
+<h3 id="22-边界情况edge-case"><a class="header" href="#22-边界情况edge-case">2.2. 边界情况(Edge Case)</a></h3>
+<p>这个设计思想在测试领域比较常见，就是我们在设计我们的设计案例的时候有没有充分考虑在边界情况下的系统行为。</p>
+<blockquote>
+<p>例如：在设计一个系统的时候，我们需要考虑到系统的边界情况，比如：系统的边界情况是用户输入的数据是否合法，或者是系统的边界情况是用户输入的数据是否合法。
+比较常见的例如，闰年情况、跨日情况等边界。</p>
+</blockquote>
+<h3 id="23-防误措施mistake-proofing"><a class="header" href="#23-防误措施mistake-proofing">2.3. 防误措施(Mistake Proofing)</a></h3>
+<p>怎么保证不会发生错误。例如在人机交互环节，能不能进行输入校验？</p>
+<h3 id="24-解耦decoupling"><a class="header" href="#24-解耦decoupling">2.4. 解耦(Decoupling)</a></h3>
+<p>设计的时候，哪怕是最基础的代码也应该符合开闭原则。
+Spring的<code>IOC</code>就是为了把对象创建及维护从原来的由引用类负责这种强耦合模式转成通过spring容器负责。且解耦一般的做法是通过把内部逻辑封装起来，暴露对外统一API接口，调用方不需要了解被调用方的内部逻辑实现，只需要知道提供什么功能即可。</p>
+<blockquote>
+<p>再引申一下，解耦的作用就在于复用，把所有的高内聚功能独立成一个个模块，然后就可以像乐高积木一样根据调用方的实际需求进行组装。</p>
+</blockquote>
+<h3 id="25-冗余redundancy"><a class="header" href="#25-冗余redundancy">2.5. 冗余(Redundancy)</a></h3>
+<p>所谓的冗余指的通过重复配置关键组件或部件，保证在关键组件失效的情况下还有备份组件运作以便保证系统可以继续提供服务。生活中的例子请参与飞机的双引擎设计。
+主从模式就是冗余的体现。在正常情况下，主实例负责提供全部的服务，从实例在主实例整体或部分不可用的情况下，完全替代主实例整体或局部而对外提供服务。</p>
+<h3 id="26-重试retry"><a class="header" href="#26-重试retry">2.6. 重试(Retry)</a></h3>
+<p>重试是在分布式系统下处理瞬态故障的一个基本手段，简单有效（当然重试的前提是要求幂等）。但是重试也是可以很危险的，它能够引起把一个局部小时间迅速升级为一个系统重大故障，严重者导致系统假死。</p>
+<p><img src="./assets/design-for-failure-02.png" alt="" /></p>
+<h3 id="27-冷备cold-standby"><a class="header" href="#27-冷备cold-standby">2.7. 冷备(Cold Standby)</a></h3>
+<p>冷备实际上也是冗余设计的其中一种体现，只是它会更侧重于“冷”，意思是当系统发生宕机时，这个系统是需要手动启动用于替换下线的主实例，它是跟热备是不一样，热备更多体现在自动切换。</p>
+<h3 id="28-熔断derating"><a class="header" href="#28-熔断derating">2.8. 熔断(Derating)</a></h3>
+<p>熔断本质上就是一种防御性设计或者策略。假设一个微服务体系下的系统，其中A服务调用B服务。系统的QPS是千级别，当时如果B服务挂掉的话A的线程绝对在短时间内占满耗尽而导致假死，从而形成大量A请求积压而导致情况恶化，最终形成雪崩。</p>
+<h3 id="29-容错error-tolerance"><a class="header" href="#29-容错error-tolerance">2.9. 容错(Error Tolerance)</a></h3>
+<p>狭义的容错泛指人机交互界面的时候需要对用户输入进行输入校验，保证数据准确性。
+广义的容错应该是两个具有明确边界的事物（如服务间，系统间）交互时候针对可能发生的一切主客观异常情况的防御性手段。常见的容错机制有failsafe、failback、failover、failfast。</p>
+<ul>
+<li>failfast 更多指的是快速失败，避免线程积压导致系统滚雪球式崩溃。</li>
+<li>failover 指的是失效转移。</li>
+<li>failsafe 指的是失效安全。</li>
+<li>failback 指的是失效自动恢复，将故障实例切换到备实例。</li>
+</ul>
+<h3 id="210-失效安全fail-safe"><a class="header" href="#210-失效安全fail-safe">2.10. 失效安全(Fail safe)</a></h3>
+<p>所谓的失效安全，就是指在特定失效的情况下，一个系统或者服务也不会对业务造成损害。</p>
+<blockquote>
+<p>例如：我们使用token进行安全登录也是一种失效安全的体现，如果token失效了（如时间过期），用户是无法登录的，因为正常登录需要token有一种约束因素，这种因素就是时间。如果时间过了，代表这种约束因素不存在或者不再有效了，登录功能就不能正常工作了。</p>
+</blockquote>
+<h3 id="211-优雅降级graceful-degradation"><a class="header" href="#211-优雅降级graceful-degradation">2.11. 优雅降级(Graceful Degradation)</a></h3>
+<p>服务降级跟熔断还是挺像的，只是降级来得更加温和和优雅一点。熔断是直接断掉防止异常进一步扩大而导致雪崩，但是我们的终极目标是提供尽可能多的服务，这个就是优雅降级的理念。在一些异常情况或者秒杀场景下，为了保证核心服务（如商品下单、支付）的正常可用，会放弃掉一些非核心服务（如历史账单查询），这就是所谓的服务降级。</p>
+<blockquote>
+<p>在微服务框架中，一般会使用Hystrix的@HystrixCommand或Feign的@FeignClient对服务进行声明，然后为每个服务配置相应的fallback类，最终结合起来进行服务降级。</p>
+</blockquote>
+<h3 id="212-耐用性durability"><a class="header" href="#212-耐用性durability">2.12. 耐用性(Durability)</a></h3>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../design-for-software/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../chapter_5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../design-for-software/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../chapter_5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>
