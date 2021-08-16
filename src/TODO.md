@@ -11,6 +11,9 @@
 * [ ] Playwright 结合 AI 技术，如何优化构建产物性能？
 * [ ] Playwright 结合 AI 技术，如何测试UI组件的兼容性？
 * [ ] Playwright 结合 AI 技术，如何为微服务带来实质上的提速？
+* [ ] Playwright 结合 AI 技术，如何提升网站的加载速度？
+  > * 参照文章: [Speed-up your sites with web-page prefetching using Machine Learning](https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html)
+  > * 源码：[https://github.com/tensorflow/tfx/tree/master/tfx/examples/tfjs_next_page_prediction](https://github.com/tensorflow/tfx/tree/master/tfx/examples/tfjs_next_page_prediction)
 
 ## 杂物
 
