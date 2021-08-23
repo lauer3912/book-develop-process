@@ -166,6 +166,7 @@ Playwright 结合 AI 技术，如何测试UI组件的兼容性？</li>
 Playwright 结合 AI 技术，如何为微服务带来实质上的提速？</li>
 <li><input disabled="" type="checkbox"/>
 Playwright 结合 AI 技术，如何提升网站的加载速度？
+&gt;
 <blockquote>
 <ul>
 <li>参照文章: <a href="https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html">Speed-up your sites with web-page prefetching using Machine Learning</a></li>
@@ -1076,6 +1077,118 @@ Spring的<code>IOC</code>就是为了把对象创建及维护从原来的由引�
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="网站分析"><a class="header" href="#网站分析">网站分析</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="github"><a class="header" href="#github">GitHub</a></h1>
+<h2 id="1-简要说明"><a class="header" href="#1-简要说明">1. 简要说明</a></h2>
+<h2 id="2-跟踪日志"><a class="header" href="#2-跟踪日志">2. 跟踪日志</a></h2>
+<h3 id="21-标签打开-a-hrefhttpsgithubcomhttpsgithubcoma-首先获取到的是document文档"><a class="header" href="#21-标签打开-a-hrefhttpsgithubcomhttpsgithubcoma-首先获取到的是document文档">2.1. 标签打开 <a href="https://github.com">https://github.com</a>， 首先获取到的是document文档</a></h3>
+<p>参看 <a href="web-site-analysis/./assets/github.init.html">HTML源码</a></p>
+<p>从HTML源码上看，可以确定以下几点：</p>
+<ul>
+<li><code>GitHub 首页，采用服务器渲染(SSR)</code></li>
+<li>以下用法需要注意：
+<ul>
+<li><code>link</code> 资源使用了以下特性
+<ul>
+<li><code>dns-prefetch</code>: DNS 预获取。
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Performance/dns-prefetch">为什么要使用 dns-prefetch</a></li>
+</ul>
+</li>
+<li><code>preconnect</code>: 预连接。
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Preconnect">为什么要使用 preconnect</a>,</li>
+<li><a href="https://segmentfault.com/a/1190000011065339">dns-prefetch，preconnect，prefetch和prerender的区别</a></li>
+</ul>
+</li>
+<li><code>crossorign</code>: <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS">跨源资源共享(CORS)</a>
+<ul>
+<li><code>anonymous</code>: 匿名资源共享</li>
+</ul>
+</li>
+<li><code>media</code>: <code>all</code></li>
+<li><code>integrity</code>：为了防止CDN篡改资源，可以使用 <code>integrity</code> 属性
+<ul>
+<li><a href="https://www.cnblogs.com/zuojiayi/p/7207031.html">js--script和link中的 integrity 属性</a></li>
+<li><a href="https://www.jianshu.com/p/7c7f00c0dc8c">link标签中的integrity和crossorigin字段</a></li>
+<li>eg. <code>sha512-v+hxrr/7LrDH9DTy8tzqdDqKoXOnyWGr12dO4VTOYorMfADgcOjIRDVoy0RyTsLIj5gKzBTOpiFDwkze7/n8Iw==</code></li>
+</ul>
+</li>
+<li><code>rel</code>:
+<ul>
+<li>
+<p><code>rel = stylesheet</code>:</p>
+</li>
+<li>
+<p><code>rel = mask-icon</code>: Safari固定选项卡图标</p>
+<ul>
+<li>阅读文章: <a href="https://developer.yoast.com/blog/safari-pinned-tab-icon-mask-icon/">https://developer.yoast.com/blog/safari-pinned-tab-icon-mask-icon/</a></li>
+<li>eg. <code>&lt;link rel=&quot;mask-icon&quot; href=&quot;https://github.githubassets.com/pinned-octocat.svg&quot; color=&quot;#000000&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = alternate</code>:</p>
+<ul>
+<li>适用于PC站点</li>
+<li>eg. <code>&lt;link rel=&quot;alternate&quot; type=&quot;application/atom+xml&quot; title=&quot;ATOM&quot; href=&quot;/lauer3912.private.atom?token=AAMPFSXIQDTZALS7672YVIV7F36DO&quot; /&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = alternate icon</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;alternate icon&quot; class=&quot;js-site-favicon&quot; type=&quot;image/png&quot; href=&quot;https://github.githubassets.com/favicons/favicon.png&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = icon</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;icon&quot; class=&quot;js-site-favicon&quot; type=&quot;image/svg+xml&quot; href=&quot;https://github.githubassets.com/favicons/favicon.svg&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = manifest</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = assets</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;assets&quot; href=&quot;https://github.githubassets.com/&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = shared-web-socket</code></p>
+<blockquote>
+<p><code>&lt;link rel=&quot;shared-web-socket&quot; href=&quot;wss://alive.github.com/_sockets/u/1635018/ws?session=eyJ2IjoiVjMiLCJ1IjoxNjM1MDE4LCJzIjo3MTMyMjU3ODEsImMiOjMzNTQwMDg3MDYsInQiOjE2Mjk2OTA2Nzl9--87c63fd86a3e6e87f7a0e6f69d77ab3d87f234b99a08b02925d6a8dc899dd2c3&quot; data-refresh-url=&quot;/_alive&quot; data-session-id=&quot;de62121be298a192a3a4b349189208479f722db76ec5dae048b4eff98bfac6f8&quot;&gt; &lt;/link&gt;</code></p>
+</blockquote>
+</li>
+<li>
+<p><code>rel = shared-web-socket-src</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;shared-web-socket-src&quot; href=&quot;/socket-worker-3f088aa2.js&quot;&gt;</code></li>
+</ul>
+</li>
+<li>
+<p><code>rel = sudo-modal</code>:</p>
+<ul>
+<li>eg. <code>&lt;link rel=&quot;sudo-modal&quot; href=&quot;/sessions/sudo_modal&quot;&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>script</code> 资源使用了以下特性
+<ul>
+<li><code>crossorigin</code>: <code>anonymous</code></li>
+<li><code>defer</code>: <code>defer</code></li>
+<li><code>integrity</code>：eg. <code>sha512-v+hxrr/7LrDH9DTy8tzqdDqKoXOnyWGr12dO4VTOYorMfADgcOjIRDVoy0RyTsLIj5gKzBTOpiFDwkze7/n8Iw==</code></li>
+<li><code>data-module-id</code>: eg. &quot;./chunk-access-groups.js&quot;</li>
+<li><code>data-src</code>: eg. &quot;<a href="https://github.githubassets.com/assets/chunk-access-groups-bfe871ae.js">https://github.githubassets.com/assets/chunk-access-groups-bfe871ae.js</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="爱奇艺"><a class="header" href="#爱奇艺">爱奇艺</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai助力"><a class="header" href="#ai助力">AI助力</a></h1>
 <h2 id="ai-库"><a class="header" href="#ai-库">AI 库</a></h2>
