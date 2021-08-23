@@ -22,6 +22,7 @@
 - [软件模式参照](./refs-architecture-mode/index.md)
   - [HTTP API重新构想](./refs-architecture-mode/api-re-design/index.md)
     - [autocode的标准API库模式](./refs-architecture-mode/api-re-design/autocode.md)
+- [埋点解决方案](./tracking/index.md)
 - [网站性能分析](./web-site-analysis/index.md)
   - [GitHub](./web-site-analysis/GitHub.md)
   - [爱奇艺](./web-site-analysis/iqiyi.md)
