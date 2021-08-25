@@ -30,7 +30,7 @@
       - `rel = mask-icon`: Safari固定选项卡图标
         - 阅读文章: [https://developer.yoast.com/blog/safari-pinned-tab-icon-mask-icon/](https://developer.yoast.com/blog/safari-pinned-tab-icon-mask-icon/)
         - eg. `<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">`
-      - `rel = alternate`:
+      - `rel = alternate`: 替补的含义，可以理解为替代的意思。在环境中，不会被浏览器解析，但是可以被搜索引擎解析。
         - 适用于PC站点
         - eg. `<link rel="alternate" type="application/atom+xml" title="ATOM" href="/lauer3912.private.atom?token=AAMPFSXIQDTZALS7672YVIV7F36DO" />`
       - `rel = alternate icon`:
