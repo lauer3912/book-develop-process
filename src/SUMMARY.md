@@ -4,6 +4,7 @@
 - [心得](./memo/index.md)
 - [引文](./chapter_1.md)
 - [软件测试理论](./chapter_2.md)
+  - [Allure 测试报告查看器](./test-services/allure.md)
 - [软件架构模式](./chapter_3.md)
   - [微服务架构/组件](./micro-services/index.md)
     - [Kubernetes (K8s)](./micro-services/kubernetes/index.md)

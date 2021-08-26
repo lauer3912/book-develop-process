@@ -6,6 +6,7 @@
 
 ## 2. 中文
 
+* [Kubernetes 中文指南/云原生应用架构实践手册](https://jimmysong.io/kubernetes-handbook/)
 * [Kubernetes 官方文档中文版](https://kubernetes.io/docs/home/)
 * [Kubernetes 中文社区](https://www.kubernetes.org.cn/)
 * [第三方 https://kuboard.cn/](https://kuboard.cn/)
